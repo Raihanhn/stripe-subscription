@@ -47,6 +47,7 @@ export async function POST(request: NextRequest) {
         role: result.user.role,
       },
     });
+
   } catch (error) {
     console.error("Error in signup API:", error);
     return NextResponse.json(
